@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.senjapagi.BukberRanger.Main.Admin.Tambah_Acara_Bukber"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fff"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Tambah Jadwal Buka / Makan Bersama"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="12pt"/>
+
+
+
+
+                    <LinearLayout
+                        android:background="@drawable/bg_rounded_filled_stroke"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kategori" />
+
+                        <EditText
+                            android:id="@+id/spinner_kategori"
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama Kegiatan"
+                            android:inputType="text"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_id"
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal Buka/Makan Bersama" />
+
+                        <EditText
+                            android:id="@+id/et_tanggal_bukber"
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_id"
+                            android:hint="Tanggal (dd/MM/yyyy)"
+                            android:inputType="text"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Format Tanggal : dd/mm/YYYY misal 24/08/00"
+                            android:textSize="4pt" />
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kuota Porsi Ikhwan :" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_kuota_ikhwan"
+                                style="@style/TextViewStyle1"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/title"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                            <TextView
+                                style="@style/TextViewStyle1"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Porsi" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kuota Porsi Akhwat :" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_kuota_akhwat"
+                                style="@style/TextViewStyle1"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/title"
+                                android:layout_weight="1"
+                                android:hint="0"
+                                android:inputType="number" />
+
+                            <TextView
+                                style="@style/TextViewStyle1"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Porsi" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Menu Makanan* :" />
+
+                        <EditText
+                            android:id="@+id/et_menu_makanan"
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title"
+                            android:layout_marginTop="5dp"
+                            android:hint="Menu Makanan" />
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Menu Makanan* :" />
+
+                        <EditText
+                            android:id="@+id/et_catatan"
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title"
+                            android:layout_marginTop="5dp"
+                            android:hint="Catatan Untuk Peserta" />
+
+                        <TextView
+                            style="@style/TextViewStyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* : Tidak Wajib Diisi "
+                            android:textSize="4pt" />
+
+                    </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_button_blue"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Tambah" />
+
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

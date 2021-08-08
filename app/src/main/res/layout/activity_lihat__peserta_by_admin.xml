@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="Pendaftaran Bukber"
+    android:background="@drawable/o3"
+    android:id="@+id/swipe_refresh"
+    android:orientation="vertical"
+    tools:context="com.senjapagi.BukberRanger.Main.Peserta.Lihat_Peserta_Terdaftar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/float_transparent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_All"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/bg_rounded_filled_stroke"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="15dp">
+
+                    <TextView
+                        android:id="@+id/tvdb_kategori_bukber"
+                        style="@style/TextViewStyleInfoBukber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bukber Puasa"
+                        android:textSize="10pt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:padding="10dp"
+                            android:text="Sisa Kuota"
+                            android:textAlignment="center"
+                            style="@style/TextViewStyleInfoBukber"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rounded_filled_soft_green"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="5dp"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/tvdb_porsi_ikhwan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:gravity="center"
+                                    android:text="900"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    style="@style/TextViewStyleInfoBukber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Ikhwan"
+                                    android:textColor="#ffffff" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/bg_rounded_filled_red"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/tvdb_porsi_akhwat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:gravity="center"
+                                    android:text="900"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    style="@style/TextViewStyleInfoBukber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Akhwat"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextViewStyleInfoBukber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Tanggal :" />
+
+                        <TextView
+                            android:id="@+id/tvdb_tanggal_bukber"
+                            style="@style/TextViewStyleInfoBukber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="dd/MM/yyyy" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextViewStyleInfoBukber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Menu Makanan : " />
+
+                        <TextView
+                            android:id="@+id/tvdb_lauk"
+                            style="@style/TextViewStyleInfoBukber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:text="-" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextViewStyleInfoBukber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Catatan Untuk Peserta : " />
+
+                    <TextView
+                        android:id="@+id/tvdb_catatan"
+                        style="@style/TextViewStyleInfoBukber"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextViewStyleInfoBukber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status :" />
+
+                            <TextView
+                                android:id="@+id/tvdb_status_bukber"
+                                style="@style/TextViewStyleInfoBukber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Tersedia" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/TextViewStyleInfoBukber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="ID Bukber : "
+                            android:textAlignment="textEnd"
+                            android:textSize="5pt" />
+
+                        <TextView
+                            android:id="@+id/tvdb_id_kegiatan"
+                            style="@style/TextViewStyleInfoBukber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="-"
+                            android:textAlignment="textEnd"
+                            android:textSize="5pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loadingContainerAtas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_filled_stroke"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout4">
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        android:id="@+id/spin_kit"
+                        style="@style/SpinKitView.MultiplePulseRing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:visibility="visible"
+                        app:SpinKit_Color="@color/colorAccent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Memuat Jadwal Bukber"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="10dp"
+                android:text="Daftar Peserta Bukber"
+                android:textColor="#fff"
+                android:textSize="13pt"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:layout_editor_absoluteX="15dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_rounded_filled_stroke"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ListView
+                        android:id="@+id/listPesertabyPeserta"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:padding="6dp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/keteranganPendaftaran0"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="Belum ada Peserta Bukber Mendaftar"
+                        android:fontFamily="@font/montserrat_thin"
+                        android:textSize="10pt">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/pesertaError"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="@string/pesertaError"
+                        android:fontFamily="@font/montserrat_thin"
+                        android:textSize="8pt">
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/loadingContainer"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_rounded_filled_stroke1dp"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/spin_kit2"
+                    android:padding="5dp"
+                    style="@style/SpinKitView.MultiplePulseRing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:SpinKit_Color="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Memuat Data Peserta"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/koneksiError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/float_transparent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/not_found"/>
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_filled"
+                android:textAlignment="center"
+                android:text="Tidak Dapat Terhubung Dengan Server\nPeriksa Koneksi Internet Anda Atau Coba Lagi Nanti"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#000000"/>
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="REFRESH"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/jadwal_kosong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/float_transparent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/not_found"/>
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_filled"
+                android:textAlignment="center"
+                android:text="Belum ada Jadwal Yang Tersedia\natau\nBelum Ada Peserta Bukber Yang Mendaftar"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#000000"/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_refresh2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="REFRESH"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loadingJadwalAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_filled_stroke"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kitJadwal"
+                style="@style/SpinKitView.MultiplePulseRing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:visibility="visible"
+                app:SpinKit_Color="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:textAlignment="center"
+                android:text="Memuat Jadwal dan\n Peserta Bukber"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp_rectangle_root"
+        android:text="Home"
+        android:textColor="#fff"
+        android:fontFamily="@font/montserrat_regular"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_refreshOnDemand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_refresh_24dp"
+            android:layout_margin="16dp"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlPrayList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_data"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp">
+
+
+                    <View
+                        android:id="@+id/title_shimmer"
+                        android:layout_width="70dp"
+                        android:layout_height="5dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_view"/>
+
+                    <View
+                        android:layout_marginTop="11dp"
+                        android:id="@+id/item1_shimmer"
+                        android:layout_width="170dp"
+                        android:layout_height="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@id/title_shimmer"
+                        android:background="@drawable/bg_view"/>
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="-8dp"
+            android:background="@drawable/ic_circle_white"
+            android:gravity="center">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="-8dp"
+            android:background="@drawable/ic_circle_white"
+            android:gravity="center">
+        </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

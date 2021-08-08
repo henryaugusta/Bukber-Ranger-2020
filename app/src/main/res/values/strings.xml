@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bukber Ranger</string>
+    <string name="note_daftar_bukber">
+        Note : Username dan Password akan Digunakan Untuk Menampilkan QR Code untuk Mengambil Jatah Bukber, Harap Disimpan dan Diingat</string>
+    <string name="note_daftar1">1. Pastikan nama anda muncul di daftar peserta setelah pendaftaran berhasil</string>
+    <string name="note_daftar2">2. Username dan Password harap disimpan , karena akan digunakan untuk menampilkan QR Code yang akan discan untuk mengambil bukber</string>
+    <string name="note_daftar3">3. Satu akun ( username dan password ) hanya bisa digunakan di 1 kali bukber pada tanggal terdaftar</string>
+    <string name="note_daftar_penting">4. Akun yang tidak mengambil makanan bukber setelah mendaftar maka dipertimbangkan untuk tidak dapat mengikuti kegiatan bukber</string>
+    <string name="branding">This App Was Developed by Henry Augusta \nSistem Informasi 2018\nfor\nMasjid Syamsul Ulum\nTelkom University</string>
+    <string name="infoJadwalErrorInternet">Jadwal Bukber dan Peserta Tidak Tersedia , Silakan Periksa Koneksi Internet Anda Atau Coba Lagi Nanti</string>
+    <string name="pesertaError">Peserta Bukber Sedang Tidak Dapat Ditampilkan , Periksa Koneksi Internet Anda atau Coba Lagi Nanti</string>
+    <string name="koneksiError">Tidak Dapat Terhubung Dengan Server Periksa Koneksi Internet Anda Atau Coba Lagi Nanti</string>
+    <string name="catatan_tutorial"><![CDATA[- Save QR Code anda dengan cara di screenshot ( Opsional )]]></string>
+</resources>

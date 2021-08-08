@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "6835328189",
+    "firebase_url": "https://bukber-ranger.firebaseio.com",
+    "project_id": "bukber-ranger",
+    "storage_bucket": "bukber-ranger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6835328189:android:564f3a7223d08a929b13d4",
+        "android_client_info": {
+          "package_name": "com.senjapagi.qrtomysql"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6835328189-hd9ir3t5jmm1vhvm1nbo7sftioat21cl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.senjapagi.qrtomysql",
+            "certificate_hash": "37fa761546cd62256b38b787a362567fb4eabcbe"
+          }
+        },
+        {
+          "client_id": "6835328189-lugt3b18d8k8jp0nc9pvtq3p0uc7pg8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa768z6v9wr2OWyY-BfNheIPz54Y7QqJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6835328189-lugt3b18d8k8jp0nc9pvtq3p0uc7pg8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
